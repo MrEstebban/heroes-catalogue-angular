@@ -1,0 +1,23 @@
+<div class="col">
+  <div class="card">
+    <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre" />
+    <div class="card-body">
+      <h5 class="card-title">{{ heroe.nombre }}</h5>
+      <p class="card-text">
+        {{ heroe.bio }}
+      </p>
+      <p class="card-text">
+        <small class="text-muted">
+          {{ heroe.aparicion }}
+        </small>
+      </p>
+      <div class="d-grid gap-2">
+        <button (click)="verHeroe()" type="button" class="btn btn-primary">
+          Ver más
+        </button>
+        <!--  link and button have the same functionality, redirect to a new component-->
+        <!-- <a [routerLink]="['/heroe', i]" class="btn btn-primary">Ver más</a> -->
+      </div>
+    </div>
+  </div>
+</div>
